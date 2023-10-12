@@ -1,5 +1,13 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for (let x = 0; x < array.length; x++){
+    const numberSum = target - array[x]
+    for(let y = x+1; y < array.length; y++){
+      if (array[y] === numberSum) 
+      return true;
+    }
+  }
+  return false;
 }
 
 /* 
@@ -7,7 +15,7 @@ function hasTargetSum(array, target) {
 */
 
 /* 
-  Add your pseudocode here
+  We get a number after iterating over the array that when we add to another to get the targetSum
 */
 
 /*
@@ -29,6 +37,9 @@ if (require.main === module) {
 
   console.log("Expecting: false");
   console.log("=>", hasTargetSum([1, 2, 5], 4));
+  console.log('')
+
+  
 }
 
 module.exports = hasTargetSum;
