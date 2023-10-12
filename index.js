@@ -15,11 +15,12 @@ function hasTargetSum(array, target) {
 */
 
 /* 
-  We get a number after iterating over the array that when we add to another to get the targetSum
+ Get a number after iteration over an array, 
+ add it to another to get the target
 */
 
 /*
-  Add written explanation of your solution here
+   We get a number after iterating over the array that when we add to another to get the target
 */
 
 // You can run `node index.js` to view these console logs
